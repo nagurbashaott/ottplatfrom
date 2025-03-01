@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiju No. 8 - Watch Episodes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #2c3e50; /* Changed background color to dark blue-gray */
+            color: #fff; /* White text color */
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Kalam', cursive;
+            font-size: 48px;
+            text-align: center;
+            color: #f39c12;
+            margin-top: 50px;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h2 {
+            color: #f1c40f;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Video Player */
+        .video-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Episode Buttons */
+        .episodes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .episode-link {
+            padding: 20px 40px;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            width: 220px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+
+        .episode-link:hover {
+            transform: scale(1.05);
+        }
+
+        /* Different color buttons */
+        .episode-link:nth-child(1) {
+            background-color: #f39c12; /* Orange */
+        }
+        .episode-link:nth-child(2) {
+            background-color: #e74c3c; /* Red */
+        }
+        .episode-link:nth-child(3) {
+            background-color: #3498db; /* Blue */
+        }
+        .episode-link:nth-child(4) {
+            background-color: #2ecc71; /* Green */
+        }
+        .episode-link:nth-child(5) {
+            background-color: #9b59b6; /* Purple */
+        }
+        .episode-link:nth-child(6) {
+            background-color: #1abc9c; /* Teal */
+        }
+        .episode-link:nth-child(7) {
+            background-color: #f1c40f; /* Yellow */
+        }
+        .episode-link:nth-child(8) {
+            background-color: #34495e; /* Dark Gray */
+        }
+        .episode-link:nth-child(9) {
+            background-color: #e67e22; /* Orange */
+        }
+        .episode-link:nth-child(10) {
+            background-color: #8e44ad; /* Violet */
+        }
+        .episode-link:nth-child(11) {
+            background-color: #e74c3c; /* Red */
+        }
+        .episode-link:nth-child(12) {
+            background-color: #16a085; /* Green Blue */
+        }
+
+        /* Home Button */
+        .home-button {
+            display: block;
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 40px auto;
+            text-align: center;
+            width: 200px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #34495e;
+            transform: scale(1.05);
+        }
+
+        /* Animation for fading in the page */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kaiju No. 8 - Watch Episodes</h1>
+    <h2>Enjoy the latest episodes of Kaiju No. 8</h2>
+
+    <!-- Home Button -->
+    <a href="anime.html" class="home-button">Back to Home</a>
+
+    <!-- Video Player Container -->
+    <div class="video-container">
+        <iframe id="videoPlayer" width="100%" height="600px" src="https://beta.awstream.net/watch?v=kaiju-no-8-8211-episode-1&lang=telugu" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- Episode Buttons -->
+    <div class="episodes">
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-8211-episode-1&lang=telugu">Watch Episode 1</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-8211-episode-2&lang=telugu">Watch Episode 2</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-8211-episode-3&lang=telugu">Watch Episode 3</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-4&lang=telugu">Watch Episode 4</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-5&lang=telugu">Watch Episode 5</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-06&lang=telugu">Watch Episode 6</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-07&lang=telugu">Watch Episode 7</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-8&lang=telugu">Watch Episode 8</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-9&lang=telugu">Watch Episode 9</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-10&lang=telugu">Watch Episode 10</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-11&lang=telugu">Watch Episode 11</a>
+        <a href="javascript:void(0);" class="episode-link" data-episode="https://beta.awstream.net/watch?v=kaiju-no-8-season-8211-01-8211-episode-12&lang=telugu">Watch Episode 12</a>
+    </div>
+
+    <script>
+        // Get all the episode links
+        const episodeLinks = document.querySelectorAll('.episode-link');
+
+        // Add click event listeners to each episode link
+        episodeLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Get the episode URL from the data-episode attribute
+                const episodeUrl = link.getAttribute('data-episode');
+                
+                // Change the iframe's src attribute to the new episode URL
+                document.getElementById('videoPlayer').src = episodeUrl;
+            });
+        });
+    </script>
+
+</body>
+</html>

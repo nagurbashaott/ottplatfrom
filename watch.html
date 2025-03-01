@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Naruto - Anime Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #00aaff, #1e2a47); /* New gradient background */
+            color: #ffffff; /* White text color for readability */
+            padding: 20px;
+            margin: 0;
+            transition: background 0.5s ease;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            color: #f8f9fa; /* Light color for heading */
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Home Button */
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #16a085; /* Teal color */
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1abc9c; /* Brighter teal on hover */
+        }
+
+        /* Episode Section */
+        .episode {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #34495e; /* Dark grey background for episode section */
+            border-radius: 10px;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .episode h2 {
+            color: #f39c12; /* Gold color for headings */
+        }
+
+        .episode a {
+            color: #ffffff; /* Default button text color */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .episode a:hover {
+            text-decoration: underline;
+        }
+
+        /* Episode Buttons */
+        .episode-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Custom colors for each episode button */
+        .episode-button-1 { background-color: #1abc9c; }
+        .episode-button-2 { background-color: #e74c3c; }
+        .episode-button-3 { background-color: #f39c12; }
+        .episode-button-4 { background-color: #8e44ad; }
+        .episode-button-5 { background-color: #3498db; }
+
+        /* Hover effects */
+        .episode-button:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        .episode-button-1:hover { background-color: #16a085; }
+        .episode-button-2:hover { background-color: #c0392b; }
+        .episode-button-3:hover { background-color: #e67e22; }
+        .episode-button-4:hover { background-color: #9b59b6; }
+        .episode-button-5:hover { background-color: #2980b9; }
+
+        /* Video container and iframe */
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+        }
+
+        /* Keyframes for animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Home Button -->
+    <a href="anime.html" class="home-button">Back to Home</a>
+
+    <h1>Watch Naruto - Select Episode</h1>
+
+    <!-- Video Player -->
+    <div class="video-container">
+        <iframe id="episodeVideo" src="https://beta.awstream.net/watch?v=naruto-8211-episode-001&lang=tel" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Episode Links -->
+    <div class="episode">
+        <h2>Episodes</h2>
+        <!-- Episode buttons -->
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(1)">Episode 1</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(2)">Episode 2</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(3)">Episode 3</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(4)">Episode 4</a>
+        <a href="#" class="episode-button episode-button-5" onclick="changeEpisode(5)">Episode 5</a>
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(6)">Episode 6</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(7)">Episode 7</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(8)">Episode 8</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(9)">Episode 9</a>
+        <a href="#" class="episode-button episode-button-5" onclick="changeEpisode(10)">Episode 10</a>
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(11)">Episode 11</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(12)">Episode 12</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(13)">Episode 13</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(14)">Episode 14</a>
+        <a href="#" class="episode-button episode-button-5" onclick="changeEpisode(15)">Episode 15</a>
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(16)">Episode 16</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(17)">Episode 17</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(18)">Episode 18</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(19)">Episode 19</a>
+        <a href="#" class="episode-button episode-button-5" onclick="changeEpisode(20)">Episode 20</a>
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(21)">Episode 21</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(22)">Episode 22</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(23)">Episode 23</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(24)">Episode 24</a>
+        <a href="#" class="episode-button episode-button-5" onclick="changeEpisode(25)">Episode 25</a>
+        <a href="#" class="episode-button episode-button-1" onclick="changeEpisode(27)">Episode 27</a>
+        <a href="#" class="episode-button episode-button-2" onclick="changeEpisode(28)">Episode 28</a>
+        <a href="#" class="episode-button episode-button-3" onclick="changeEpisode(29)">Episode 29</a>
+        <a href="#" class="episode-button episode-button-4" onclick="changeEpisode(30)">Episode 30</a>
+    </div>
+
+    <script>
+        // Function to change episode based on the episode number clicked
+        function changeEpisode(episodeNumber) {
+            var iframe = document.getElementById('episodeVideo');
+            var videoURL = '';
+
+            // Update URL based on selected episode
+            switch (episodeNumber) {
+                case 1:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-001&lang=tel";
+                    break;
+                case 2:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-002&lang=tel";
+                    break;
+                case 3:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-3&lang=tel";  // Fixed URL for Episode 3
+                    break;
+                case 4:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-004&lang=tel";
+                    break;
+                case 5:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-005&lang=tel";
+                    break;
+                case 6:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-006&lang=tel";
+                    break;
+                case 7:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-007&lang=tel";
+                    break;
+                case 8:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-008&lang=tel";
+                    break;
+                case 9:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-009&lang=tel";
+                    break;
+                case 10:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-010&lang=tel";
+                    break;
+                case 11:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-011&lang=tel";
+                    break;
+                case 12:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-012&lang=tel";
+                    break;
+                case 13:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-013&lang=tel";
+                    break;
+                case 14:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-014&lang=tel";
+                    break;
+                case 15:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-015&lang=tel";
+                    break;
+                case 16:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-016&lang=tel";
+                    break;
+                case 17:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-017&lang=tel";
+                    break;
+                case 18:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-018&lang=tel";
+                    break;
+                case 19:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-019&lang=tel";
+                    break;
+                case 20:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-020&lang=tel";
+                    break;
+                case 21:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-021&lang=tel";
+                    break;
+                case 22:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-022&lang=tel";
+                    break;
+                case 23:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-023&lang=tel";
+                    break;
+                case 24:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-024&lang=tel";
+                    break;
+                case 25:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-025&lang=tel";
+                    break;
+                case 27:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-027&lang=tel";
+                    break;
+                case 28:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-028&lang=tel";
+                    break;
+                case 29:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-029&lang=tel";
+                    break;
+                case 30:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-030&lang=tel";
+                    break;
+                default:
+                    videoURL = "https://beta.awstream.net/watch?v=naruto-8211-episode-001&lang=tel"; // Default to Episode 1
+                    break;
+            }
+
+            // Set new video URL in iframe
+            iframe.src = videoURL;
+        }
+    </script>
+
+</body>
+</html>
